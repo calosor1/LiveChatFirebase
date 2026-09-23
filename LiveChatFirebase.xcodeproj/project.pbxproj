@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ACAD24E03063521500DD08E3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ACAD24DF3063521500DD08E3 /* FirebaseAuth */; };
+		ACAD24E23063521A00DD08E3 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = ACAD24E13063521A00DD08E3 /* FirebaseCore */; };
+		ACAD24E43063522500DD08E3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ACAD24E33063522500DD08E3 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		ACAD24BE30634E6000DD08E3 /* LiveChatFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveChatFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAD24E23063521A00DD08E3 /* FirebaseCore in Frameworks */,
+				ACAD24E03063521500DD08E3 /* FirebaseAuth in Frameworks */,
+				ACAD24E43063522500DD08E3 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				ACAD24C030634E6000DD08E3 /* LiveChatFirebase */,
+				ACAD24DE3063521500DD08E3 /* Frameworks */,
 				ACAD24BF30634E6000DD08E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +53,13 @@
 				ACAD24BE30634E6000DD08E3 /* LiveChatFirebase.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ACAD24DE3063521500DD08E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +82,9 @@
 			);
 			name = LiveChatFirebase;
 			packageProductDependencies = (
+				ACAD24DF3063521500DD08E3 /* FirebaseAuth */,
+				ACAD24E13063521A00DD08E3 /* FirebaseCore */,
+				ACAD24E33063522500DD08E3 /* FirebaseFirestore */,
 			);
 			productName = LiveChatFirebase;
 			productReference = ACAD24BE30634E6000DD08E3 /* LiveChatFirebase.app */;
@@ -94,6 +114,9 @@
 			);
 			mainGroup = ACAD24B530634E6000DD08E3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ACAD24DD3063514C00DD08E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ACAD24BF30634E6000DD08E3 /* Products */;
 			projectDirPath = "";
@@ -324,6 +347,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACAD24DD3063514C00DD08E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.19.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACAD24DF3063521500DD08E3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACAD24DD3063514C00DD08E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ACAD24E13063521A00DD08E3 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACAD24DD3063514C00DD08E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		ACAD24E33063522500DD08E3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACAD24DD3063514C00DD08E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACAD24B630634E6000DD08E3 /* Project object */;
 }
